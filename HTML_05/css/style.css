@@ -76,7 +76,7 @@ ul.menu li:last-child {
 .login-form {
   font-family: "Helvetica Neue", Arial, sans-serif;
   width: 560px;
-  margin: 200px auto;
+  margin: 15% auto;
   color: white;
 }
 .form-header{
@@ -87,7 +87,7 @@ ul.menu li:last-child {
 .form-body {
   padding: 35px;
   background: rgba(0, 0, 0, 0.5);
-  margin-top: 2px;
+  margin-top: 1px;
 }
 .form-item{
   margin: 10px auto;
