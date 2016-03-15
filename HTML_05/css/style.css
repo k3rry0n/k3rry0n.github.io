@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('helvetica_neu_bold-webfont.eot');
+    src: url('helvetica_neu_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('helvetica_neu_bold-webfont.woff2') format('woff2'),
+         url('helvetica_neu_bold-webfont.woff') format('woff'),
+         url('helvetica_neu_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+}
+body {
+  color: white;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: url('../img/background.png');
+  background-size: cover;
+  width: 100%;
+  height: 1080px;
+  -ms-background-position-y: 35px;
+  background-position-y: 35px;
+}
+header{
+  height: 35px;
+  width: 100%;
+  background: url('../img/menu_bg.png') repeat-x;
+}
+ul.menu {
+  float: right;
+  font-size: 14px;
+}
+ul.menu li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  color: #60b5ed;
+  height: 100%;
+  line-height: 34px;
+  padding: 0 10px;
+}
+ul.menu a {
+  color: white;
+  cursor: pointer;
+  z-index: 9;
+}
+ul.menu li:hover {
+  background-color: #4EABDA;
+  color: white;
+  cursor: pointer;
+}
+ul.menu button{
+  background: url('../img/ofertas.png') no-repeat;
+  border: none;
+  color: white;
+  width: 130px;
+  height: 100%;
+}
+ul.menu button:hover{
+  cursor: pointer;
+}
+ul.menu li:nth-child(6){
+  border-left: 1px solid #56A2DC;
+}
+ul.menu li:last-child {
+  margin-right: 20px;
+  background: linear-gradient(to bottom, #50AFDC, #2E7AC4);
+  color: white;
+}
+.login-form {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  width: 560px;
+  margin: 200px auto;
+  color: white;
+}
+.form-header{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+.form-body {
+  padding: 35px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 2px;
+}
+.form-item{
+  margin: 10px auto;
+  text-align: center;
+}
+.division:before,
+.division:after {
+    border-top: 1px solid grey;
+    content: "";
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 150px;
+}
+.form-item input[type="text"],
+.form-item input[type="password"],
+.form-item input[type="email"] {
+  width: 275px;
+  height: 35px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+.form-item input[type="checkbox"] + label {
+  padding: 5px;
+  font-size: 14px;
+  vertical-align: center;
+
+}
+.form-body .terms{
+  text-align: center;
+  font-size: 11px;
+  color: #ccc;
+}
+button.facebook {
+  height: 33px;
+  width: 270px;
+  background: url('../img/facebook.png');
+  border: none;
+  border-radius: 5px;
+}
