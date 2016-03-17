@@ -17,6 +17,9 @@
   content: "";
   clear: both;
 }
+input, textarea {
+  outline: none;
+}
 body {
   color: white;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -28,6 +31,7 @@ body {
   background-position-y: 35px;
 }
 header{
+  margin-top: -2px;
   height: 35px;
   width: 100%;
   background: url('../img/menu_bg.png') repeat-x;
@@ -61,17 +65,22 @@ ul.menu button{
   color: white;
   width: 130px;
   height: 100%;
-  padding: 15px;
+  padding: 14px 12px 12px 14px;
 }
 ul.menu button:hover{
   cursor: pointer;
+  background: url('../img/ofertas.png') no-repeat;
+  border: none;
+  color: white;
+  width: 130px;
+  height: 100%;
+  padding: 14px 12px 12px 14px;
 }
 ul.menu li:nth-child(6){
   border-left: 1px solid #56A2DC;
 }
 ul.menu li:last-child {
   margin-right: 20px;
-  background: linear-gradient(to bottom, #50AFDC, #2E7AC4);
   color: white;
 }
 .login-form {
@@ -127,7 +136,23 @@ ul.menu li:last-child {
   padding: 5px;
   font-size: 14px;
   vertical-align: center;
+}
+.form-item input[type="submit"]{
+  padding: 7px 10px;
+  background: linear-gradient(to bottom, #50AEDB, #2E7AC4) ;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+}
 
+.form-item input[type="submit"]:hover{
+  background: linear-gradient(to bottom, #49a4d1, #3f79b2);
+}
+.form-item input[type="submit"]:active{
+  box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.75);
+  background: linear-gradient(to bottom, #50AEDB, #2E7AC4);
 }
 .form-body .terms{
   text-align: center;
