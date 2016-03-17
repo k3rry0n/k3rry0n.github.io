@@ -61,6 +61,7 @@ ul.menu button{
   color: white;
   width: 130px;
   height: 100%;
+  padding: 15px;
 }
 ul.menu button:hover{
   cursor: pointer;
