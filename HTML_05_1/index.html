@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    * {
+      margin: 0 auto;
+      padding: 0;
+    }
+    table {
+      padding: 5px;
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+    td {
+      border: 2px solid black;
+      padding: 20px 5px;
+      width: 100px;
+      height: 20px;
+    }
+    .yellow {
+      background-color: #FFF467;
+    }
+    .blue {
+      background-color: #03407D;
+    }
+    .red {
+      background-color: #FF5E44;
+    }
+    .black {
+      background-color: #485752;
+    }
+  </style>
+<body>
+  <div class="container">
+    <table>
+      <tr>
+        <td colspan="2"></td>
+        <td colspan="3"></td>
+        <td colspan="2" class="yellow"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="4" rowspan="2" class="red"></td>
+        <td colspan="2" class="yellow"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2" class="black"></td>
+        <td colspan="2"></td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td rowspan="3" class="yellow"></td>
+        <td colspan="2" class="black"></td>
+        <td colspan="2"></td>
+        <td colspan="2" rowspan="2" class="blue"></td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+        <td colspan="2" class="black"></td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+        <td colspan="4"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
