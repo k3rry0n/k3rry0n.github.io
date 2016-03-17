@@ -46,7 +46,7 @@ ul.menu li {
   vertical-align: middle;
   color: #60b5ed;
   height: 100%;
-  line-height: 34px;
+  line-height: 35px;
   padding: 0 10px;
 }
 ul.menu a {
@@ -59,25 +59,18 @@ ul.menu li:hover {
   color: white;
   cursor: pointer;
 }
-ul.menu button{
-  background: url('../img/ofertas.png') no-repeat;
-  border: none;
-  color: white;
-  width: 130px;
-  height: 100%;
-  padding: 14px 12px 12px 14px;
-}
-ul.menu button:hover{
-  cursor: pointer;
-  background: url('../img/ofertas.png') no-repeat;
-  border: none;
-  color: white;
-  width: 130px;
-  height: 100%;
-  padding: 14px 12px 12px 14px;
-}
 ul.menu li:nth-child(6){
   border-left: 1px solid #56A2DC;
+  padding-left: 40px;
+  position: relative;
+  text-shadow: 0 0 2px black;
+  color: white;
+}
+ul.menu li img{
+  left: 10px;
+  margin-top: 4px;
+  position: absolute;
+  top: 3px;
 }
 ul.menu li:last-child {
   margin-right: 20px;
