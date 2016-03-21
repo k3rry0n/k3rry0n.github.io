@@ -51,7 +51,7 @@
     </div>
 
     <div class="sorting clearfix">
-      
+
       <div class="sort car">
         <div class="sort-header">
           <span>Диски:</span>
@@ -120,8 +120,8 @@
               </select>
             </div>
           </div>
-        </div>        
-            <a href="#">Найти</a>
+        </div>
+            <a href="#">Поиск</a>
       </div>
 
       <div class="sort tyres">
@@ -130,36 +130,34 @@
         </div>
 
          <div class="left">
-            <div class="field">
-              <label for="car_name">Марка <span class="grey">авто</span></label>
-              <select name="" id="car_name">
-                <option value="SAAB"></option>
-                <option value="VW"></option>
-              </select>
+            <div class="field size_name">
+              <span>Размер</span>
+              <select name="" id="size_from"></select>
+              /
+              <select name="" id="size_to"></select>
             </div>
-            <div class="field">
-              <label for="car_name">Модель <br><span class="grey">автомобиля</span></label>
-              <select name="" id="car_name">
-                <option value="SAAB"></option>
-                <option value="VW"></option>
-              </select>
+            <div class="field size_r">
+              R <select name="" id="size_r"></select>
             </div>
-            <div class="field">
-              <label for="car_name">Год выпуска <br><span class="grey">автомобиля</span></label>
-              <select name="" id="car_name" class="small">
-                <option value="SAAB"></option>
-                <option value="VW"></option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="car_name">Комплектаци</label>
-              <select name="" id="car_name">
-                <option value="SAAB"></option>
-                <option value="VW"></option>
-              </select>
+            <div class="field checkbox_block">
+              <span class="checkbox_name">Сезон</span>
+              <div class="check_filter">
+                <input type="checkbox" name="" id="season_1">
+                <label for="season_1">лето</label>
+              </div>
+
+              <div class="check_filter">
+                <input type="checkbox" name="" id="season_2">
+                <label for="season_2">зима</label>
+              </div>
+
+              <div class="check_filter">
+                <input type="checkbox" name="" id="season_3">
+                <label for="season_3">всесез</label>
+              </div>
             </div>
           </div>
-
+        <a href="#">Поиск</a>
       </div>
 
       <div class="sort disc">
@@ -202,16 +200,16 @@
     </div>
 
     <main class="clearfix">
-      
+
       <div class="sidebar sidebar-left">
         <div class="sidebar--header">
           <img src="img/list.png" alt="иконка списка">
-          каталог продукции      
+          каталог продукции
         </div>
         <div class="sidebar--menu">
           <div class="sidebar--header">
             <img src="img/round.png" alt="иконка списка">
-            шины     
+            шины
           </div>
           <ul>
             <li>Наименование 1</li>
@@ -223,7 +221,7 @@
         <div class="sidebar--menu">
           <div class="sidebar--header">
             <img src="img/round.png" alt="иконка списка">
-            диски     
+            диски
           </div>
           <ul>
             <li>Наименование 1</li>
@@ -235,7 +233,7 @@
         <div class="sidebar--menu">
           <div class="sidebar--header">
             <img src="img/round.png" alt="иконка списка">
-            болты    
+            болты
           </div>
           <ul>
             <li>Наименование 1</li>
@@ -245,20 +243,28 @@
           </ul>
         </div>
       </div>
-      
+
       <div class="main--product">
-        MAIN
+        <figure>1</figure>
+        <figure>2</figure>
+        <figure>3</figure>
+        <figure>4</figure>
+        <figure>5</figure>
+        <figure>6</figure>
+        <figure>7</figure>
+        <figure>8</figure>
+        <figure>9</figure>
       </div>
-      
+
       <div class="sidebar sidebar-right">
         <div class="sidebar--header">
           <img src="img/list.png" alt="иконка списка">
-          бренды     
+          бренды
         </div>
         <div class="sidebar--menu">
           <div class="sidebar--header">
             <img src="img/round.png" alt="иконка списка">
-            шины     
+            шины
           </div>
           <ul>
             <li>
@@ -282,7 +288,7 @@
         <div class="sidebar--menu">
           <div class="sidebar--header">
             <img src="img/round.png" alt="иконка списка">
-            шины     
+            шины
           </div>
                     <ul>
             <li>
@@ -305,7 +311,7 @@
         </div>
         <button>Выбрать</button>
       </div>
-    
+
     </main>
 
     <footer></footer>

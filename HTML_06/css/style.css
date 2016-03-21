@@ -150,7 +150,7 @@ ul.site-menu {
 ul.site-menu li {
     display: inline-block;
     font-size: 13.64px;
-    padding: 5px 15px;
+    padding: 5px 13px;
     float: left;
     text-transform: uppercase;
 }
@@ -197,7 +197,8 @@ ul.site-menu li {
   font-size: 14px;
   color: #154467;
   float: right;
-  margin-right: 10px;
+  margin-right: 21px;
+  margin-top: 2px;
 }
 .sort {
     margin: 0 4px;
@@ -209,9 +210,13 @@ ul.site-menu li {
     box-shadow: 2px 2px 5px grey;
     float: left;
 }
-
+.tyres .field{
+  margin: 0;
+  text-align: right;
+}
 .sort-header {
     width: 100%;
+    margin-top: -5px;
 }
 .tyres,
 .car,
@@ -221,6 +226,51 @@ ul.site-menu li {
 .tyres {
     margin-left: 11px;
     width: 182px;
+}
+#size_from,
+#size_to {
+  display: inline-block;
+  width: 50px;
+}
+#size_r {
+  width: 40px;
+}
+.tyres .size_r {
+  margin-right: 96px;
+}
+.tyres select {
+  height: 20px;
+}
+.tyres input[type="checkbox"]{
+  height: 12px;
+  width: 12px;
+}
+.tyres a {
+  margin-top: -5px;
+}
+.tyres .sort-header,
+.disc .sort-header {
+  padding-left: 5px;
+}
+.checkbox_block {
+  margin-top: 5px;
+}
+.checkbox_name {
+  float: left;
+  clear: both;
+  width: 24%;
+}
+.check_filter {
+  float: right;
+  text-align: left;
+  width: 79%;
+  margin-right: -11px;
+}
+.check_filter label{
+  float: none;
+}
+.field.size_name {
+    margin-right: 25px;
 }
 .car {
     width: 404px;
@@ -247,20 +297,22 @@ ul.site-menu li {
 
 .car span:first-child {
     width: 17%;
+    padding-left: 15px;
 }
 .car .filter-name {
     width: 60%;
-} 
+}
 
 .car span:last-child {
     text-align: right;
     width: 17%;
+
 }
 .car .left {
   width: 45%;
   display: block;
   float: left;
-} 
+}
 .car .right {
   width: 45%;
   display: block;
@@ -272,9 +324,10 @@ ul.site-menu li {
   text-align: right;
   font-size: 10px;
   margin-top: -5px;
-} 
+  line-height: 10px;
+}
 .field:nth-child(2){
-  margin-top: 5px;
+  margin-top: 1px;
 }
 .field:nth-child(3) select{
   width: 40px;
@@ -295,14 +348,14 @@ select {
 
 
 main {
-    margin-top: 15px;
+    margin-top: 34px;
 }
 .main {
     height: 624px;
 }
 
 .sidebar {
-  width: 185px;
+  width: 180px;
   float: left;
 }
 .sidebar ul li:hover::before{
@@ -335,24 +388,23 @@ main {
 }
 
 .sidebar-left ul li{
-  list-style-type: none; 
+  list-style-type: none;
 }
 .sidebar-left ul li:before {
   content: "○ ";
 }
 .sidebar-right ul li{
-  list-style-type: none; 
+  list-style-type: none;
 }
 li input[type="checkbox"]{
-  list-style-type: none; 
+  list-style-type: none;
 }
 .sidebar-left ul{
   font-size: 12.73px;
   text-align: right;
   margin-right: 30px;
-  margin-top: 10px;
   color: #465961;
-  line-height: 20px;
+  line-height: 24px;
 }
 .sidebar-left ul li:hover{
   font-size: 14px;
@@ -361,6 +413,10 @@ li input[type="checkbox"]{
   font-weight: bold;
   font-family: Arial, sans-serif;
   margin-right: -15px;
+}
+.sidebar--menu:nth-child(3),
+.sidebar--menu:nth-child(4){
+  margin-top: -10px;
 }
 .sidebar-right ul{
   font-size: 12.73px;
@@ -383,4 +439,5 @@ li input[type="checkbox"]{
     background: linear-gradient(to bottom, #e5e7e8, #93a7b0) 0 0 no-repeat;
     margin-left: 10px;
     height: 626px;
+    padding: 10px;
 }
