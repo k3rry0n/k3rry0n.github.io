@@ -142,6 +142,7 @@ ul.menu li:last-child {
 
 .form-item input[type="submit"]:hover{
   background: linear-gradient(to bottom, #49a4d1, #3f79b2);
+  cursor: pointer;
 }
 .form-item input[type="submit"]:active{
   box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.75);
@@ -158,4 +159,5 @@ button.facebook {
   background: url('../img/facebook.png');
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
