@@ -375,6 +375,12 @@ main {
   width: 180px;
   float: left;
 }
+.sidebar li:hover{
+  cursor: pointer;
+}
+.sidebar li label:hover{
+  cursor: pointer;
+}
 .sidebar ul li:hover::before{
   font-style: normal;
 }
@@ -506,6 +512,9 @@ span.description {
   border: none;
   background: linear-gradient(to bottom, #1E6383, #0D3458);
   color: white;
+}
+.sidebar button:hover{
+  cursor: pointer;
 }
 .brand-row {
   padding: 36px 29px 21px 29px;
