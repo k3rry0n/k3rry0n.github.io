@@ -31,7 +31,6 @@ body {
   background-position-y: 35px;
 }
 header{
-  margin-top: -2px;
   height: 35px;
   width: 100%;
   background: url('../img/menu_bg.png') repeat-x;
