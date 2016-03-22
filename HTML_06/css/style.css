@@ -539,6 +539,7 @@ footer {
 }
 .footer-nav a {
   text-decoration: none;
+  font-family: Arial, sans-serif;
   color: white;
 }
 .footer-nav ul li {
