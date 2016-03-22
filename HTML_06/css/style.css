@@ -529,8 +529,8 @@ span.description {
 footer {
   font-family: Arial, sans-serif;ё
   padding: 5px 20px 0 20px;
-  height: 110px;
-  width: 870px;
+  height: 100px;
+  width: 910px;
   background-color: #213A4D;
 }
 .footer-nav {
@@ -547,7 +547,7 @@ footer {
   display: inline-block;
   font-size: 12px;
   padding-left: 14px;
-  padding-right: 4px;
+  padding-right: 9px;
   border-left: 1px solid white;
   letter-spacing: -0.12px;
 }
@@ -555,7 +555,8 @@ footer {
   border: none;
 }
 .footer-nav ul {
-  margin-left: 15px;
+  margin-left: 21px;
+  padding-top: 10px;
 }
 .footer-nav a:hover {
     color: #52ABCB;
