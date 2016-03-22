@@ -374,6 +374,8 @@ main {
 .sidebar {
   width: 180px;
   float: left;
+  font-family: 'Lucida Sans Unicode', Arial, sans-serif;
+  font-size: 12.73px;
 }
 .sidebar li:hover{
   cursor: pointer;
