@@ -158,5 +158,7 @@ button.facebook {
   background: url('../img/facebook.png');
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+}
+button.facebook:hover{
+  cursor: pointer
 }
