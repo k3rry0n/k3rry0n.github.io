@@ -24,14 +24,30 @@ header {
     height: 30px;
     padding: 10px 5px 5px 5px;
 }
-
+.header--top-nav {
+    padding: 0 5px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.header--top-nav {
+  margin-left: 2px;
+}
+.header--top-nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 6px;
+  position: relative;
+  top: -2px;
+  left: 1px;
+}
 .header--top-phone {
     float: left;
     display: inline-block;
     font-family: Arial;
     font-size: 18px;
     color: #5e696d;
-    margin-top: -2px;
     letter-spacing: 0.42px;
 }
 
@@ -58,7 +74,7 @@ header {
 }
 
 .header--top-auth img {
-    margin: 2px 2px 0 7px;
+    margin: 2px 2px 2px 7px;
 }
 
 .header--top-auth input[type="text"],
@@ -124,15 +140,16 @@ header {
 
 .header--logo {
     height: 235px;
+    margin-top: 1px;
 }
 
 .menu {
-    background: linear-gradient(to bottom, #505860, #020202);
-    border-radius: 5px;
-    height: 28px;
-    padding: 2px;
-    padding-left: 50px;
-    margin-top: 2px;
+  background: linear-gradient(to bottom, #505860, #020202);
+  border-radius: 5px;
+  height: 28px;
+  padding: 3px;
+  padding-left: 51px;
+  margin-top: 2px;
 }
 
 nav {
@@ -142,17 +159,17 @@ nav {
 }
 
 ul.site-menu {
-    /*float: right;*/
     list-style: none;
     color: #b1bcc0;
 }
 
 ul.site-menu li {
-    display: inline-block;
-    font-size: 13.64px;
-    padding: 5px 13px;
-    float: left;
-    text-transform: uppercase;
+  display: inline-block;
+  font-size: 13.64px;
+  padding: 10px 13px;
+  float: left;
+  text-transform: uppercase;
+  line-height: 4px;
 }
 
 .site-menu--item:hover {
@@ -373,7 +390,7 @@ main {
   position: relative;
   border: 1px solid black;
   border-radius: 15px;
-  padding: 5px 5px 5px 30px;
+  padding: 4px 5px 5px 30px;
   box-shadow: 3px 3px 3px #79878d;
   text-transform: uppercase;
 }
@@ -404,7 +421,7 @@ li input[type="checkbox"]{
   text-align: right;
   margin-right: 30px;
   color: #465961;
-  line-height: 24px;
+  line-height: 24.5px;
 }
 .sidebar-left ul li:hover{
   font-size: 14px;
@@ -416,14 +433,13 @@ li input[type="checkbox"]{
 }
 .sidebar--menu:nth-child(3),
 .sidebar--menu:nth-child(4){
-  margin-top: -10px;
+  margin-top: -9px;
 }
 .sidebar-right ul{
   font-size: 12.73px;
   margin-left: 10px;
-  margin-top: 10px;
+  line-height: 24.5px;
   color: #465961;
-  line-height: 20px;
 }
 .sidebar-right ul li:hover{
   font-size: 14px;
@@ -433,11 +449,110 @@ li input[type="checkbox"]{
   font-family: Arial, sans-serif;
   margin-right: -15px;
 }
+.sidebar-right .sidebar--menu {
+  margin-left: 15px;
+}
+.sidebar-right .sidebar--menu:nth-child(3) {
+  margin-left: 15px;
+  margin-top: 9px;
+}
 .main--product {
     float: left;
     width: 505px;
     background: linear-gradient(to bottom, #e5e7e8, #93a7b0) 0 0 no-repeat;
     margin-left: 10px;
-    height: 626px;
+    height: 604px;
     padding: 10px;
+    overflow: hidden;
+}
+.main--product figure {
+  display: inline-block;
+  width: 164px;
+  height: 185px;
+  text-align: center;
+  line-height: 15px;
+  margin-bottom: 18px;
+}
+.main--product figcaption {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  color: #206988;
+  padding-left: 20px;
+}
+span.description {
+  display: block;
+}
+.figure-title {
+  font-family: 'Lucida Sans Unicode', Arial, sans-serif;
+  font-size: 14.59px;
+  color: #206988;
+  font-weight: bold;
+}
+.fix-height {
+  position: relative;
+  top: -8px;
+}
+.description {
+  font-family: 'Lucida Sans Unicode', Arial, sans-serif;
+  font-size: 12.77px;
+}
+.sidebar button {
+  margin: 16px 25px;
+  height: 26px;
+  width: 81px;
+  border-radius: 40px;
+  border: none;
+  background: linear-gradient(to bottom, #1E6383, #0D3458);
+  color: white;
+}
+.brand-row {
+  padding: 36px 29px 21px 29px;
+  margin-left: 77px;
+}
+.brand-row a{
+  display: inline-block;
+  margin-left: 9px;
+}
+footer {
+  padding: 5px 20px 0 20px;
+  height: 110px;
+  width: 870px;
+  background-color: #213A4D;
+}
+.footer-nav {
+  margin: 0 auto;
+  max-width: 40%;
+}
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+}
+.footer-nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 12px;
+  padding-left: 14px;
+  padding-right: 4px;
+  border-left: 1px solid white;
+  letter-spacing: -0.12px;
+}
+.footer-nav ul li:first-child {
+  border: none;
+}
+.footer-nav ul {
+  margin-left: 15px;
+}
+.footer-nav a:hover {
+    color: #52ABCB;
+}
+.copyright {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  color: #7F4740;
+  font-size: 10px;
+  margin: 0 auto;
+  width: 160px;
+  padding-top: 12px;
 }

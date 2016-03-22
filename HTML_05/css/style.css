@@ -16,6 +16,7 @@
 .clearfix:after {
   content: "";
   clear: both;
+  display: block;
 }
 input, textarea {
   outline: none;
