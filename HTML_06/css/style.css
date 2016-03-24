@@ -234,7 +234,6 @@ ul.site-menu li {
 }
 .sort-header {
     width: 100%;
-    margin-top: -5px;
 }
 .tyres,
 .car,
@@ -244,6 +243,14 @@ ul.site-menu li {
 .tyres {
     margin-left: 11px;
     width: 182px;
+}
+.disc .left {
+  margin-top: 14px;
+  margin-left:5px;
+  margin-right:5px;
+}
+.tyres .left {
+  margin-top: 6px;
 }
 #size_from,
 #size_to {
@@ -262,9 +269,6 @@ ul.site-menu li {
 .tyres input[type="checkbox"]{
   height: 12px;
   width: 12px;
-}
-.tyres a {
-  margin-top: -5px;
 }
 .tyres .sort-header,
 .disc .sort-header {
@@ -298,7 +302,7 @@ ul.site-menu li {
 }
 .filter {
   width: 100%;
-  margin-top: 3px;
+  margin-top: 6px;
   padding: 5px;
 }
 .sort-header span {
