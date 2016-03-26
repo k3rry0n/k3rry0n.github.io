@@ -151,31 +151,52 @@ body {
   font-family: 'League Gothic', Impact, sans-serif;
   font-size: 24px;
   text-align: center;
+  box-sizing: border-box;
 }
 .header__menu a{
   color: white;
   text-decoration: none;
 }
+.active {
+  box-sizing: border-box;
+  border-bottom: 3px solid #edbfff;
+}
+.header__menu > .header__menu__item:first-child  {
+    border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.sub .header__menu__item:last-child{
+  border-bottom-right-radius: 10px; 
+  border-bottom-left-radius: 10px;
+}
 .header__menu__item  {
-  width: 80px;
+  position: relative;
+  max-width: 240px;
   list-style-type: none;
-  border-bottom: 3px solid #EDBFFF;
   text-transform: uppercase;
   color: white;
   margin: 0 auto;
 }
 .header__menu__item:hover {
-  width: 240px;
+  width: 100%;
   background-color: rgba(62, 50, 71, 0.7);
-  border-radius: 5px;
+  box-sizing: border-box;
   cursor: pointer;
-  transition: .5s;
 }
-.header__menu__item +.header__menu__item {
+.sub {
   display: none;
+  background-color: rgba(63, 51, 72, 0.5);
+  border-bottom-right-radius: 10px; 
+  border-bottom-left-radius: 10px;
 }
-.header__menu__item:hover ~ .header__menu__item {
+
+.header__menu__item:hover .sub {
+  top: 28px;
+  left: 0;
+  display: none;
+  position: absolute;
   display: block;
+  width: 100%;
 }
 
 .slider {
@@ -361,10 +382,23 @@ body {
   margin-top: 10px;
 }
 .brands {
+  border-top: 1px solid #999;
   margin: 0 auto;
   text-align: center;
 }
 .brands__logo {
   display: inline-block;
-  padding: 40px;
+  padding: 30px;
+}
+footer {
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-shadow: 1px 1px 2px black;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 140px;
+  font-size: 12px;
+}
+.extra {
+  font-weight: bolder;
 }
