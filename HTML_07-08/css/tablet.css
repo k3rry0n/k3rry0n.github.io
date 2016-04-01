@@ -1,0 +1,26 @@
+@media (min-width: 768px) {
+  .header__logo {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 70px;
+  }
+  
+  .header__nav {
+    display: none;
+  }
+  .header__nav--inline {
+/*    margin-left: 22px;*/
+    margin-top: 20px;
+  }
+  .header__nav--inline li{
+    font-family: 'League Gothic', Impact, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 2px black
+    padding: 0 20px;
+  }
+}
