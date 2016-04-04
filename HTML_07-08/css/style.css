@@ -272,7 +272,7 @@ body {
   text-align: center;
   width: 95%;
   height: 30px;
-  padding-left: 7px;
+  /*padding-left: 7px;*/
 }
 .switcher__item{
   display: inline-block;
@@ -338,7 +338,7 @@ body {
   margin-left: 87px;
   line-height: 25px;
 }
-.about__info h1{
+.about__info h2{
   margin-left: 85px;
   font-family: 'League Gothic', Impact, sans-serif;
   text-transform: uppercase;
@@ -371,10 +371,10 @@ body {
     padding: 28px 40px 22px 57px;
     position: relative;
 }
-.mentions__item h1 {
+.mentions__item header {
   font-family: 'League Gothic', Impact, sans-serif;
   font-weight: lighter;
-  font-size: 24px;
+  font-size: 2em;
   color: rgba(69, 69, 69, 1);
   text-transform: uppercase;
 }
@@ -405,7 +405,7 @@ body {
   height: 270px;
   position: relative;
 }
-.updates h1 {
+.updates > h2 {
   font-family: 'League Gothic', Impact, sans-serif;
   font-size: 28px;
   color: rgba(69, 69, 69, 1);
@@ -421,10 +421,11 @@ body {
   padding: 5px;
   margin-left: 15px;
 }
-.updates article header{
+.recent h2{
   font-size: 16px;
   font-weight: bolder;
   margin-top: 10px;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 .updates article p {
   font-size: 16px;
@@ -537,11 +538,11 @@ footer {
     left: -22px;
     top: 18px;
   }
-  .mentions__item h1 {
+  .mentions__item header {
     display: inline-block;
     font-size: 28px;
     margin-top: -3px;
-    margin-left: 2px;
+    margin-left: 10px;
   }
   .mentions__item h2 {
     display: inline;
@@ -556,7 +557,7 @@ footer {
     margin-top: 21px;
     margin-left: -15px;
   }
-  .updates h1 {
+  .updates > h2 {
     font-family: 'League Gothic', Impact, sans-serif;
     font-size: 28px;
     color: rgba(69, 69, 69, 1);
@@ -602,7 +603,7 @@ footer {
   .news {
     /*height: 670px;*/
     display: block;
-    padding: 10px 20px;
+    padding: 10px 20px 20px 20px;
     background-color: #ececec;
   }
   .news article {
@@ -613,17 +614,18 @@ footer {
   .news article.copyright{
     display: none;
   }
-  .news header {
+  .news h2 {
     text-transform: uppercase;
     font-family: 'League Gothic', Impact, sans-serif;
     font-size: 24px;
+    color: #454545;
   }
   .news p {
     line-height: 25px;
   }
   .footer__nav {
     display: block;
-    margin-top: 80px;
+    margin-top: 40px;
   }
   .footer__nav ul {
     text-align: center;
@@ -642,7 +644,7 @@ footer {
     cursor: pointer;
   }
   footer {
-    margin-top: 0;
+    margin-top: 30px;
   }
 }
 
@@ -714,10 +716,11 @@ footer {
     vertical-align: top;
     margin-top: 100px;
   }
-  .slider__info_block header{
+  .slider__info_block h1{
     font-size: 46px;
     margin-top: -8px;
     margin-left: -18px;
+    color: white;
   }
   .slider .iphone{
     width: 300px;
@@ -748,9 +751,9 @@ footer {
     width: 50%;
     float: left;
   }
-  .mentions__item h1 {
+  .mentions__item header {
     display: block;
-    font-size: 26px;
+    font-size: 2em;
   }
   .mentions__item {
     padding: 29px 20px 22px 37px;
@@ -770,9 +773,11 @@ footer {
     float: right;
     width: 50%;
   }
-  .updates h1 {
+/*  .updates h2 {
     margin-left: 7%;
-  }
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-transform: none;
+  }*/
   .updates article{
     overflow: hidden;
     padding: 5px;
@@ -791,7 +796,7 @@ footer {
     padding: 0;
   }
   .news {
-    height: 320px;
+    height: 350px;
     display: block;
     padding: 10px 20px;
     background-color: #ececec
