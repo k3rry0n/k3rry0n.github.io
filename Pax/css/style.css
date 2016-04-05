@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff'),
+         url('../fonts/roboto-bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-light-webfont.eot');
+    src: url('../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff'),
+         url('../fonts/roboto-light-webfont.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-lightitalic-webfont.eot');
+    src: url('../fonts/roboto-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-lightitalic-webfont.woff') format('woff'),
+         url('../fonts/roboto-lightitalic-webfont.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/roboto-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	background: linear-gradient(to bottom, #fdfdfe, 
+		#e2e4e8 50%,
+		#fdfdfe 55%,
+		#e2e4e8 100%);
+}
+.uppecase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+
+.menu {
+	height: 30px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.menu__wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+.menu__logo {
+	max-width: 214px;
+}
+.menu__list{
+	float: right;
+	margin-right: 50px;
+}
+.menu__item,
+.menu__item--facebook,
+.menu__item--twitter {
+	display: inline-block;
+	list-style-type: none;
+	padding: 10px;
+	border: 1px solid #9fabba;
+	border-radius: 30px;
+	color: #5d6981;
+}
+.menu__item:hover {
+	color: #4b5467;
+	border-color: #4b5467;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.menu__item--facebook,
+.menu__item--twitter {
+	border: none;
+	width: 26px;
+	height: 26px;
+}
+.menu__item--twitter {
+	background: url('../img/sprites/social.png') -57px 0;
+}
+.menu__item--facebook {
+	background: url('../img/sprites/social.png') -5px 0;
+}
+.main {
+	width: 1200px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+.promo {
+	margin-top: 120px;
+}
+.promo h2{
+	text-align: center;
+	font-weight: bold;
+	font-size: 48px;
+	color: #0149a1;
+}
+.promo h3{
+	text-align: center;
+	font-weight: lighter;
+	font-size: 30px;
+	color: #5d6981;
+}
+.btn {
+	width: 240px;
+	height: 60px;
+	border: none;
+	border-radius: 30px;
+	font-size: 18px;
+}
+.btn--pink {
+	background-color: #ff2d55;
+	color: white;
+}
+.call_to_action {
+	margin-top: 100px;
+	text-align: center;
+}
+.demo {
+	text-align: center;
+	margin-top: 100px;
+	height: 700px;
+	width: 1200px;
+	background: url('../img/sprites/vector_bg.png') no-repeat;
+}
+.reasons {
+	display: flex;
+	flex-flow: 
+}
+.reasons__element {
+	width: 400px;
+	box-sizing: border-box;
+}
+.reasons__element h3{
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 40px;
+	color: #5d6981;
+}
+.reasons__element p {
+	font-weight: lighter;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 20px;
+	color: #5d6981;
+}
+.icon{
+	width: 140px;
+	height: 99px;
+	margin: 0 auto;
+}
+.blah{
+	background: url('../img/sprites/reason_icons.png') no-repeat;
+}
+.triangle{
+	background: url('../img/sprites/reason_icons.png') -160px no-repeat;
+}
+.lamp{
+	background: url('../img/sprites/reason_icons.png') -280px no-repeat;
+}
+.book{
+	background: url('../img/sprites/reason_icons.png') -400px no-repeat;
+}
+.creativity {
+	margin-top: 100px;
+	height: 410px;
+	background: url('../img/creativity.jpg') no-repeat;
+	background-size: 100% auto;
+}
+.howto {
+	height: 800px;
+	background-color: #0149a1;
+	color: white;
+	padding-top: 124px;
+}
+.howto h2 {
+	font-size: 72px;
+	text-align: center;
+}
+.howto h3{
+	text-align: center;
+	font-weight: lighter;
+	font-size: 36px;
+	color: #5483bb;
+}
+.howto__inner {
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	padding: 100px 0 20px 0;
+}
+.howto__inner .item {
+	width: 600px;
+	box-sizing: border-box;
+}
+.item p{
+	display: block;
+	padding: 20px 0;
+}
