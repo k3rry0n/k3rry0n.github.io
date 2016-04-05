@@ -247,7 +247,7 @@ body {
   box-sizing: border-box;
   padding-left: 45px;
 }
-.slider__info_block header {
+.slider__info_block h1 {
   text-transform: capitalize;
   font-size: 34px;
   color: white;
