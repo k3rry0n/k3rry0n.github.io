@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS 02 - Task2</title>
+	<script>
+	  var names = [];
+
+		for (var i = 4; i >= 0; i--) {
+			names[i] = prompt("Enter user name:");
+		}
+		console.log("names are: ", names);
+		
+		var nameToCheck = prompt("Enter name to check, please: ");
+		if (nameToCheck) {
+			checkName(nameToCheck, names) ? alert(nameToCheck + " Вы успешно вошли!") : alert("Имени в списке нет");
+		}
+		
+		/* **
+		* Проверяет имя name на вхождение в массив names
+		*	@param {string} username - имя пользователя для чека 
+		* @param {string} nameArray - массив с именами
+		* @return {boolean} - существует ли имя в списке
+		*/
+		
+		function checkName(username, nameArray) {
+			for(i in names) {
+					if (nameToCheck.toLowerCase() == names[i].toLowerCase()){
+						return true;
+					} 
+				}
+			}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <title> JS test 1 </title>
+</head>
+<body>
+  <script>
+	  var userNumber = parseFloat(prompt('Enter number: '));
+	  var userExponent = parseFloat(prompt('Enter exponent: '));
+			
+	  if (isFinite(userNumber) && isFinite(userExponent) && userExponent >= 0) {	
+	    console.log("Result is: ", pow(userNumber, userExponent));
+	  } 
+	  else if (isFinite(userNumber) && isFinite(userExponent) && userExponent < 0){
+      console.log("result is: ", 1 / pow(userNumber, userExponent * -1))
+		}
+	  
+    else console.log("Enter correct numbers and try again later");
+		
+    /**
+     * Возвращает num в степени to
+     *
+     * @param {number} num Число для возведения в степень.
+     * @param {number} to Показатель степени, натуральное число.
+     * @return {number} num в степени to.
+     */
+
+    function pow(num, to) {
+		
+      var i = 0;
+      sum = 1;
+		
+      while(i < to){
+        sum *= num;
+        i++;
+      }
+		
+      return sum;
+    }
+  </script>
+</body>
+</html>
