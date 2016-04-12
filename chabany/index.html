@@ -3,31 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Chabany Canvas Test Page</title>
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Russo+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<script src="js/canvas2image.js"></script>
+	<script src="js/html2canvas.js"></script>
 
-	</style>
 </head>
 <body>
 	<div class="preview">
-		Превью для изображения
-		<div class="textabove">Блок текста</div>
+		<img src="img/cover.jpg" alt="Барашки">
+		<div class="textabove"></div>
 	</div>
 
-	<div class="btn">
-		<input type="text" name="wisdom" id="quote">
-		<button>CLICK ME</button>
+	<div class="editor">
+		<input type="text" name="wisdom" id="quote" class="wisdom" onkeyup="changeString()">
+		<button class="save-result" id="btnSave" onclick="generateImage();">Generate result :)</button>
 	</div>
 	
 	<div class="result">
-		Результат
+		
 	</div>
 
 </body>
 <script type="text/javascript">
-		
+	function generateImage(){ 
+	  
+    html2canvas(document.querySelector(".preview"), {
+  
+      onrendered: function(canvas) {
+        var res = document.querySelector('.result');
+        res.appendChild(canvas);
+      }
+  
+    });
+  
+  }
+  function changeString() {
+  	var text = document.querySelector('.textabove');
+  	text.innerHTML = document.querySelector('#quote').value;
+  }
 </script>
 </html>

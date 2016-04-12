@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding: 5px;
+}
+.preview {
+	margin-top: 10px;
+	width: 600px;
+	height: 466px;
+	margin: 0 auto;
+	position: relative;
+}
+.preview img {
+	width: 600px;
+}
+.preview .textabove {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 160px;
+	font-family: 'Russo One', Arial, sans-serif;
+	font-size: 42px;
+	color: white;
+	text-shadow: 2px 2px 15px #000;
+}
+.editor {
+	margin: 0 auto;
+	text-align: center;
+	width: 600px;
+}
+.wisdom {
+	box-sizing: border-box;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 10px;
+	padding: 5px;
+}
+.result {
+	margin: 0 auto;
+}
+.result canvas {
+	margin: 0 auto;
+	display: block;
+}
+.save-result {
+	display: block;
+	width: 100%;
+	padding: 5px;
+}
