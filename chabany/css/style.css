@@ -4,6 +4,7 @@
 }
 body {
 	padding: 5px;
+	background: url(../img/background.png);
 }
 .preview {
 	margin-top: 10px;
@@ -14,6 +15,7 @@ body {
 }
 .preview img {
 	width: 600px;
+	border-radius: 20px;
 }
 .preview .textabove {
 	position: absolute;
@@ -22,14 +24,15 @@ body {
 	font-family: 'Russo One', Arial, sans-serif;
 	font-size: 42px;
 	color: white;
-	text-shadow: 2px 2px 15px #000;
+	text-shadow: 2px 2px 5px #000;
 	display: inline;
 	vertical-align: middle;
-	height: 500px;
+	height: 200px;
 	left: 20px;
 	right: 20px;
 }
 .editor {
+	position: static;
 	margin: 0 auto;
 	text-align: center;
 	width: 600px;
@@ -44,6 +47,9 @@ body {
 }
 .result {
 	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+	color: white;
 }
 .result canvas {
 	margin: 0 auto;

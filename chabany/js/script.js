@@ -4,6 +4,7 @@ function generateImage(){
   
     onrendered: function(canvas) {
       var res = document.querySelector('.result');
+      res.innerHTML = "";
       res.appendChild(canvas);
     }
 
@@ -12,6 +13,6 @@ function generateImage(){
 }
 
 function changeString() {
-  var text = document.querySelector('.textabove');
-  text.innerHTML = document.querySelector('#quote').value;
+	var text = document.querySelector('.textabove');
+ 	text.innerHTML = document.querySelector('#quote').value;
 }
