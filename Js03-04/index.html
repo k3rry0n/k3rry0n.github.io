@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Шаблон анкеты</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script>
+    	
+    var myProgrammingTest = {
+
+    		test: [],
+    		
+    		displayQuiz: function()  {
+    			
+    			document.body.setAttribute('style', 'width:50%; margin: 0 auto;');
+    			document.body.appendChild(document.createElement('h1'));
+    			
+    			var header = document.querySelector('h1');
+    			var form = document.createElement('form')
+    			var ul = document.createElement('ul');
+    			var submit = document.createElement('input');
+
+
+    			header.innerHTML = 'Programming Test';
+    			header.setAttribute('style', 'text-align: center');
+    			
+    			submit.type = 'submit';
+    			submit.setAttribute('style', 'width:100%;');
+    			submit.classList.add("btn");
+
+    			document.body.appendChild(form);
+    			
+    			for (var i = 0; i < this.test.length; i++) {
+    				var listElement = document.createElement('li');
+    				listElement.innerHTML = this.test[i].question;
+    				console.log(listElement);
+    				ul.appendChild(listElement);
+    				ul.appendChild(this.generateAnswers(this.test[i].answers));
+    				form.appendChild(ul);
+    			};
+
+    			form.appendChild(submit);
+
+	    	},
+
+	    	generateAnswers: function(answers) {
+	    		var answersList = document.createElement('ul')
+	    		for (var i = 0; i < answers.length; i++){
+
+	    			var answer = document.createElement('li');
+	    			var label = document.createElement('label')
+	    			var checkbox = document.createElement('input');
+	    			checkbox.type = "checkbox";
+	    			checkbox.setAttribute('id', answers[i]);
+	    			label.appendChild(checkbox);
+	    			answer.appendChild(label);
+	    			label.innerHTML += " " + answers[i];
+	    			answersList.appendChild(answer);
+	    		}
+	    		return answersList;
+	    	},
+
+	    	generateQuiz: function(){
+	    		
+	    		var questionNum = prompt('Сколько вопросов будет содержать тест?');
+	    		
+	    		if (isFinite( questionNum ) && (questionNum >= 1)) {
+	    			for (var i = 0; i < questionNum; i++) {
+	    				this.test.push(this.createQuestion());
+	    			};
+	    		};
+	    	},
+
+	    	createQuestion: function(num){
+	    		
+	    		var newTestQuestion = {
+	    			question: '',
+	    			answers: [],
+	    			correct: null
+	    		};
+
+	    		newTestQuestion.question = prompt('Введите свой вопрос');
+	    		
+	    		do {
+	    			
+	    			var answer = prompt('Введите вариант ответа или пустую строку для завершения');
+	    			
+	    			if(answer !== ''){
+	    					newTestQuestion.answers.push(answer);
+	    			}
+	    		} while(answer !== '');
+	    		do 
+	    		{
+	    			newTestQuestion.correct = prompt('Введите номер правильного ответа');
+	    		} while (newTestQuestion.correct <= 1 && newTestQuestion.correct > newTestQuestion.answers.length);
+
+	    		return newTestQuestion;
+	    	}
+	  };
+
+	  	myProgrammingTest.generateQuiz();
+	  	myProgrammingTest.displayQuiz();
+
+    </script>
+  </body>
+</html>
