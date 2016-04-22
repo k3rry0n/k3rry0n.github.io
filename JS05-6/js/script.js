@@ -49,11 +49,9 @@ function Timer(){
 	};
 
 	this.getDelta = function(){
-		
-		var currentTime = new Date();
- 		var time = Math.abs(currentTime - this.initialTime);
+		this.time++;
  		
-		return dateFormat(new Date(time));
+		return dateFormat(new Date(this.time));
 	};
 
 	this.makePause = function(){
