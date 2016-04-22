@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Timer</title>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.timer {
+			margin: 20px;
+			padding: 20px;
+			border-radius: 10px;
+		}
+		.clock {
+			margin: 0 auto;
+			text-align: center;
+			font-size: 43pt;
+		}
+		.control {
+			width: 100%;
+		}
+		.myBtn {
+			border: 0;
+			border-radius: 5px;
+			width: 100%;
+			height: 30px;
+			color: white;
+			margin-bottom: 5px;
+		}
+		.myBtn:hover {
+			cursor: pointer;
+		}
+		.myBtn:active {
+			-webkit-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+			box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+			transition: 0.2s ease;
+		}
+		.myBtn--start {
+			background-color: #46FB6A;
+		}
+		.myBtn--start:hover {
+			background-color: #47EF66;
+		}
+		.myBtn--stop {
+			background-color: #E55252;
+		}
+		.myBtn--stop:hover {
+			background-color: #C44646;
+		}
+		.myBtn--reset {
+			background-color: grey;
+		}
+		.myBtn--reset:hover {
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<h1>МегаТаймер&trade;</h1>
+	<fieldset class="timer">
+		<legend>Здесь начинается и заканчивается Время</legend>
+		<div class="clock">
+			00:00:00.000
+		</div>
+		<div class="control">
+			<button class="myBtn myBtn--start">
+				
+			</button>
+			<button class="myBtn myBtn--reset">
+				RESET
+			</button>
+		</div>
+	</fieldset>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
