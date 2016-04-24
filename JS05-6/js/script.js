@@ -22,7 +22,7 @@ control.addEventListener('click', function(){
 			button.classList.add('myBtn--start');
 			clearInterval(countstart);
 			clock.innerHTML = "00:00:00.000"
-			timer.currentTime = 0;
+			timer.time = 0;
 		})
 
 
@@ -30,7 +30,7 @@ control.addEventListener('click', function(){
 
 			var res = timer.getDelta();
 			clock.innerHTML = res;
-		}, 1);
+		}, 5);
 
 	} else { 
 		button.innerHTML = 'START'
@@ -49,7 +49,7 @@ function Timer(){
 	};
 
 	this.getDelta = function(){
-		this.time++;
+		this.time = this.time + 5;
  		
 		return dateFormat(new Date(this.time));
 	};
@@ -60,6 +60,7 @@ function Timer(){
 };
 
 function dateFormat(date){
+	console.log(date.getUTCSeconds());
 	date = date.getUTCHours() + ':' + date.getUTCMinutes() + ':' + date.getUTCSeconds() + '.' + date.getUTCMilliseconds();
 	return date;
 }
