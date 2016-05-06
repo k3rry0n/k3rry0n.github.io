@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 	$(window).on('scroll', function() {
 			var distance = $(window).scrollTop();
-			$('body').toggleClass("show", (distance > 250 && distance < 549));
-			$('body').toggleClass("show-next", (distance > 550));
+			$('body').toggleClass("show", (distance > 200 && distance <= 400));
+			$('body').toggleClass("show-next", (distance > 400));
 	});
 });
