@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding: 5px;
+	background: url(../img/background.png);
+}
+.preview {
+	margin-top: 10px;
+	width: 600px;
+	height: 466px;
+	margin: 0 auto;
+	position: relative;
+}
+.preview img {
+	width: 600px;
+	border-radius: 20px;
+}
+.preview .textabove {
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	font-family: Lobster, cursive;
+	font-size: 42px;
+	color: white;
+	text-shadow: 2px 2px 5px #000;
+	display: inline;
+	vertical-align: middle;
+	height: 200px;
+	left: 20px;
+	right: 20px;
+}
+.editor {
+	position: static;
+	margin: 0 auto;
+	text-align: center;
+	width: 600px;
+}
+.wisdom {
+	box-sizing: border-box;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 5px;
+	width: 100%;
+}
+.result {
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+	color: white;
+}
+.result canvas {
+	margin: 0 auto;
+	display: block;
+}
+.save-result {
+	display: block;
+	width: 100%;
+	padding: 5px;
+}

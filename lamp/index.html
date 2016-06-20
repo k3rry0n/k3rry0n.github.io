@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chabany Canvas Test Page</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<script src="js/canvas2image.js"></script>
+	<script src="js/html2canvas.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="preview">
+		<img src="img/cover.png" alt="Барашки">
+		<div class="textabove"></div>
+	</div>
+
+	<div class="editor">
+		<input type="text" name="wisdom" id="quote" class="wisdom" onkeyup="changeString()">
+		<button class="save-result" id="btnSave" onclick="generateImage();" autofocus>Generate result :)</button>
+	</div>
+	
+	<div class="result">
+		<header>Здесь появится  картинка :)</header>
+	</div>
+
+</body>
+</html>
